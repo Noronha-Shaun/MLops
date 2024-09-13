@@ -7,6 +7,9 @@ from transformers import pipeline
 client = InferenceClient("HuggingFaceH4/zephyr-7b-beta")
 pipe = pipeline("text-generation", "microsoft/Phi-3-mini-4k-instruct", torch_dtype=torch.bfloat16, device_map="auto")
 
+print('iamshaun')
+print('Shaun')
+
 # Global flag to handle cancellation
 stop_inference = False
 
